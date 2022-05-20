@@ -6,49 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surprise!!!</title>
     <style>
-        *{
-            width: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
+        html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        p{
-            height: 200px;
-            width: 300px;
-            position: absolute;
-            text-align: center;
-            line-height: 200px;
-            border: 1px solid red;
+        img {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <p></p>
+    <div>❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</div>
+    <div style="text-align: center">祝我的宝贝520快乐呀～～永远爱你呦</div>
+    <img src="./WechatIMG212.jpeg" width="400"/>
+    <div>❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</div>
     <script>
-        let a = document.querySelector('p')
-        let ht = document.documentElement.clientHeight;
-        let wd = document.documentElement.clientWidth;
-        let _ht = a.offsetHeight;
-        let _wd = a.offsetWidth;
-        let dis_h = (ht - _ht) / 2 + 'px'
-        let dis_w = (wd - _wd) / 2 + 'px'
-        a.style.top = dis_h
-        a.style.left = dis_w
-
-        let greeting = () => {
-            let now = new Date();
-            let hr = now.getHours()
-            if (hr < 7 || hr >= 22){
-                a.innerHTML = '夜深啦～早点休息对皮肤好哟～晚安❤️'
-            } else if (hr >= 7 && hr < 12) {
-                a.innerHTML = '上午好哦～新的一天从现在开始～早安❤️'
-            } else if (hr >= 12 && hr < 19) {
-                a.innerHTML = '下午好嘻嘻～有空睡个午觉嘿嘿～么么❤️'
-            } else {
-                a.innerHTML = '晚上好呀～记得运动哟～摸摸❤️'
-            }
-        }
-        greeting();
-
 
     </script>
 </body>
